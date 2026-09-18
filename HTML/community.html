@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Picverse</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Picverse</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="submit.html" class="nav-link">Submit</a>
+                <a href="community.html" class="nav-link active">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="community-nav">
+        <div class="container">
+            <div class="community-nav-content">
+                <h1 class="community-title">Community Feed</h1>
+                <div class="community-nav-buttons">
+                    <button class="btn btn-outline btn-sm">
+                        <i class="fas fa-trending-up"></i>
+                        Trending
+                    </button>
+                    <button class="btn btn-outline btn-sm">
+                        <i class="fas fa-users"></i>
+                        Following
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="community-page">
+        <div class="container">
+            <div class="community-grid">
+                <div class="sidebar-left">
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <i class="fas fa-trending-up trending-icon"></i>
+                            <h3>What's Trending</h3>
+                        </div>
+                        <div class="trending-topics" id="trendingTopics">
+                            <div class="trending-topic">
+                                <div class="topic-category">Trending in Indonesia</div>
+                                <div class="topic-name">wave_to_earth</div>
+                                <div class="topic-posts">15.2k posts</div>
+                                <button class="topic-menu btn btn-outline btn-sm">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="trending-topic">
+                                <div class="topic-category">Gaming · Trending</div>
+                                <div class="topic-name">Steam Deck</div>
+                                <div class="topic-posts">42.8k posts</div>
+                                <button class="topic-menu btn btn-outline btn-sm">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="trending-topic">
+                                <div class="topic-category">Music · Trending</div>
+                                <div class="topic-name">Bruno Major</div>
+                                <div class="topic-posts">8.3k posts</div>
+                                <button class="topic-menu btn btn-outline btn-sm">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="trending-topic">
+                                <div class="topic-category">Kpop · Trending</div>
+                                <div class="topic-name">NewJeans</div>
+                                <div class="topic-posts">23.7k posts</div>
+                                <button class="topic-menu btn btn-outline btn-sm">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="sidebar-link">Show more trends</button>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="post-card" id="mainPost">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <div class="author-avatar">
+                                    <img id="authorAvatar" src="/placeholder.svg" alt="">
+                                    <div id="verifiedBadge" class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="author-info">
+                                    <h3 id="authorName">
+                                        <button class="btn follow-btn btn-outline btn-sm" id="mainFollowBtn">
+                                            Follow
+                                        </button>
+                                    </h3>
+                                    <div id="authorMeta" class="author-meta"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        <div class="post-image">
+                            <img id="postImage" src="/placeholder.svg" alt="">
+                            <div id="imageOverlay" class="image-overlay"></div>
+                        </div>
+                        <div class="post-actions">
+                            <div class="action-buttons">
+                                <div class="action-group">
+                                    <button class="action-btn" id="likeBtn">
+                                        <i class="fas fa-heart"></i>
+                                        <span id="likesCount">0</span>
+                                    </button>
+                                    <button class="action-btn">
+                                        <i class="fas fa-comment"></i>
+                                        <span>17</span>
+                                    </button>
+                                    <button class="action-btn">
+                                        <i class="fas fa-share"></i>
+                                        <span>Share</span>
+                                    </button>
+                                </div>
+                                <button class="action-btn" id="saveBtn">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-caption">
+                                    <img id="captionAvatar" src="/placeholder.svg" alt="" class="caption-avatar">
+                                    <div class="caption-content">
+                                        <div class="caption-author">
+                                            <span id="captionAuthorName"></span>
+                                            <div id="captionVerifiedBadge" class="verified-badge"><i class="fas fa-check"></i></div>
+                                        </div>
+                                        <div id="captionText" class="caption-text"></div>
+                                    </div>
+                                </div>
+                                <div class="post-comment">
+                                    <img src="../assets/images/artlover.jpg" alt="art_lover_99" class="comment-avatar">
+                                    <div class="comment-content">
+                                        <div class="comment-author">art_lover_99</div>
+                                        <div class="comment-text">This is absolutely incredible! 🔥</div>
+                                    </div>
+                                </div>
+                                <div class="post-comment">
+                                    <img src="../assets/images/digital.jpg" alt="digital_dreams" class="comment-avatar">
+                                    <div class="comment-content">
+                                        <div class="comment-author">
+                                            digital_dreams
+                                            <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                        </div>
+                                        <div class="comment-text">Amazing work! The details are insane</div>
+                                    </div>
+                                </div>
+                                <button class="view-comments">View all 17 comments</button>
+                            </div>
+                            <div class="comment-form">
+                                <img src="../assets/images/user.jpg" alt="You">
+                                <input type="text" class="comment-input" placeholder="Add a comment...">
+                                <button class="comment-submit">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-right">
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <i class="fas fa-users users-icon"></i>
+                            <h3>Discover Artists</h3>
+                        </div>
+                        <div class="suggested-users" id="suggestedUsers">
+                            <div class="suggested-user">
+                                <div class="user-avatar">
+                                    <img src="../assets/images/hanni.jpg" alt="Hanni Pham">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Hanni Pham</div>
+                                    <div class="user-username">@hannipham</div>
+                                    <div class="user-followers">2.1M followers</div>
+                                </div>
+                                <div class="user-actions">
+                                    <button class="btn follow-btn btn-outline" data-user="hanni">Follow</button>
+                                    <button class="user-menu btn btn-outline btn-sm">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="suggested-user">
+                                <div class="user-avatar">
+                                    <img src="../assets/images/rrqlj.jpg" alt="RRQ LJ">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">RRQ LJ</div>
+                                    <div class="user-username">@rrqlj</div>
+                                    <div class="user-followers">856K followers</div>
+                                </div>
+                                <div class="user-actions">
+                                    <button class="btn follow-btn btn-outline" data-user="rpg">Follow</button>
+                                    <button class="user-menu btn btn-outline btn-sm">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="suggested-user">
+                                <div class="user-avatar">
+                                    <img src="../assets/images/minji.jpg" alt="Kim Minji">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Kim Minji</div>
+                                    <div class="user-username">@kimminji</div>
+                                    <div class="user-followers">3.2M followers</div>
+                                </div>
+                                <div class="user-actions">
+                                    <button class="btn follow-btn btn-outline" data-user="kim">Follow</button>
+                                    <button class="user-menu btn btn-outline btn-sm">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="sidebar-link">Discover more artists</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Picverse</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

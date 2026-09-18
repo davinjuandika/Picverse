@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Picverse</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Picverse</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="submit.html" class="nav-link">Submit</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-page">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="header-content">
+                    <h1 class="page-title">Art Gallery</h1>
+                    <p class="page-subtitle">Discover amazing artworks from our community</p>
+                </div>
+                <div class="header-controls">
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle" id="viewBtn">
+                            <i class="fas fa-th"></i>
+                            <span>View</span>
+                        </button>
+                        <div class="dropdown-menu" id="viewDropdown">
+                            <button class="dropdown-item" data-view="grid">
+                                <i class="fas fa-th"></i>
+                                Grid View
+                            </button>
+                            <button class="dropdown-item" data-view="list">
+                                <i class="fas fa-list"></i>
+                                List View
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="artwork-card" data-id="1">
+                    <img src="../assets/images/artwork1.jpg" alt="0.1 flaws and all.">
+                    <div class="card-content">
+                        <h3 class="card-title">0.1 flaws and all.</h3>
+                        <p class="card-artist">by wave_to_earth</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>1200</span>
+                            </div>
+                            <span class="card-category">Music</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="2">
+                    <img src="../assets/images/to let a good thing die.jpg" alt="To Let A Good Thing Die">
+                    <div class="card-content">
+                        <h3 class="card-title">To Let A Good Thing Die</h3>
+                        <p class="card-artist">by Bruno Major</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>247</span>
+                            </div>
+                            <span class="card-category">Music</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="3">
+                    <img src="../assets/images/a beautiful blur.jpg" alt="a beautiful blur">
+                    <div class="card-content">
+                        <h3 class="card-title">a beautiful blur</h3>
+                        <p class="card-artist">by LANY</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>785</span>
+                            </div>
+                            <span class="card-category">Music</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="4">
+                    <img src="../assets/images/freaudian.jpg" alt="Freudian">
+                    <div class="card-content">
+                        <h3 class="card-title">Freudian</h3>
+                        <p class="card-artist">by Daniel Caesar</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>1200</span>
+                            </div>
+                            <span class="card-category">Music</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="5">
+                    <img src="../assets/images/steam.jpg" alt="Steam">
+                    <div class="card-content">
+                        <h3 class="card-title">Steam</h3>
+                        <p class="card-artist">by Valve</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>400</span>
+                            </div>
+                            <span class="card-category">Gaming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="6">
+                    <img src="../assets/images/rayq.jpg" alt="Rayquaza">
+                    <div class="card-content">
+                        <h3 class="card-title">Rayquaza</h3>
+                        <p class="card-artist">by あすてろid</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>5400</span>
+                            </div>
+                            <span class="card-category">Nintendo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="7">
+                    <img src="../assets/images/mario.jpg" alt="Mario">
+                    <div class="card-content">
+                        <h3 class="card-title">Mario</h3>
+                        <p class="card-artist">by Alpha</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>542</span>
+                            </div>
+                            <span class="card-category">Nintendo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="8">
+                    <img src="../assets/images/watermelon carr.jpg" alt="Watermelon Cat">
+                    <div class="card-content">
+                        <h3 class="card-title">Watermelon Cat</h3>
+                        <p class="card-artist">by Steve</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>878</span>
+                            </div>
+                            <span class="card-category">Animal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="9">
+                    <img src="../assets/images/haerin.jpg" alt="Haerin">
+                    <div class="card-content">
+                        <h3 class="card-title">Haerin</h3>
+                        <p class="card-artist">by MHDHH</p>
+                        <div class="card-stats">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <span>980</span>
+                            </div>
+                            <span class="card-category">Kpop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-card" id="viewMoreCard">
+                    <div class="view-more-content">
+                        <div class="view-more-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h3 class="view-more-title">View More</h3>
+                        <p class="view-more-subtitle">1 more artwork</p>
+                        <button class="btn btn-outline btn-sm">
+                            <i class="fas fa-arrow-right"></i>
+                            Load More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Picverse</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

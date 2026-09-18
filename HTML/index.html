@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse - Art Sharing Platform</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Picverse</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="submit.html" class="nav-link">Submit</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="slideshow-container">
+            <div class="slideshow-image active" style="background-image: url('../assets/images/slideshow1.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('../assets/images/slideshow2.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('../assets/images/slideshow3.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('../assets/images/slideshow4.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('../assets/images/slideshow5.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="floating-balloon balloon-1">
+            <div class="balloon orange-balloon">
+                <div class="balloon-string"></div>
+                <div class="balloon-weight"></div>
+            </div>
+        </div>
+        <div class="floating-balloon balloon-2">
+            <div class="balloon blue-balloon">
+                <div class="balloon-string"></div>
+                <div class="balloon-weight"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Picverse</h1>
+            <p class="hero-subtitle">Discover and share amazing artworks from talented artists</p>
+            <a href="gallery.html" class="hero-btn">Explore</a>
+        </div>
+
+        <div class="slideshow-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+            <button class="indicator" data-slide="4"></button>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Tags</h2>
+            <div class="trending-tags">
+                <span class="trending-tag">#Music</span>
+                <span class="trending-tag">#Gaming</span>
+                <span class="trending-tag">#DigitalArt</span>
+                <span class="trending-tag">#Nintendo</span>
+                <span class="trending-tag">#Kpop</span>
+                <span class="trending-tag">#Animal</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Artworks</h2>
+            <div class="featured-grid">
+                <div class="artwork-card" data-id="1">
+                    <img src="../assets/images/artwork1.jpg" alt="0.1 flaws and all.">
+                    <div class="card-content">
+                        <h3 class="card-title">0.1 flaws and all.</h3>
+                        <p class="card-artist">by wave_to_earth</p>
+                        <div class="card-stats">
+                            <i class="fas fa-heart"></i>
+                            <span>1200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="2">
+                    <img src="../assets/images/to let a good thing die.jpg" alt="To Let A Good Thing Die">
+                    <div class="card-content">
+                        <h3 class="card-title">To Let A Good Thing Die</h3>
+                        <p class="card-artist">by Bruno Major</p>
+                        <div class="card-stats">
+                            <i class="fas fa-heart"></i>
+                            <span>247</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="3">
+                    <img src="../assets/images/a beautiful blur.jpg" alt="a beautiful blur">
+                    <div class="card-content">
+                        <h3 class="card-title">a beautiful blur</h3>
+                        <p class="card-artist">by LANY</p>
+                        <div class="card-stats">
+                            <i class="fas fa-heart"></i>
+                            <span>785</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artwork-card" data-id="4">
+                    <img src="../assets/images/freaudian.jpg" alt="Freudian">
+                    <div class="card-content">
+                        <h3 class="card-title">Freudian</h3>
+                        <p class="card-artist">by Daniel Caesar</p>
+                        <div class="card-stats">
+                            <i class="fas fa-heart"></i>
+                            <span>1200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Picverse</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

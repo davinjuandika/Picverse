@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit - Picverse</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Picverse</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="submit.html" class="nav-link active">Submit</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="submit-page">
+        <div class="container">
+            <div class="submit-header">
+                <h1 class="page-title">Share Your Art</h1>
+                <p class="page-subtitle">Upload your artwork and share it with the community</p>
+            </div>
+
+            <div class="submit-card">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-image upload-icon"></i>
+                    <h3 class="upload-title">Upload your Art Here!</h3>
+                    <p class="upload-subtitle">Drag and drop your image or click to browse</p>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-upload"></i>
+                        Choose File
+                    </button>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
+
+                <form class="submit-form" id="submitForm">
+                    <div class="form-group">
+                        <label for="title">Artwork Title</label>
+                        <input type="text" id="title" placeholder="Enter your artwork title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Describe your artwork..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" id="tags" placeholder="e.g. #Music #Gaming #DigitalArt">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">Select a category</option>
+                            <option value="music">Music</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="digital">Digital Art</option>
+                            <option value="nintendo">Nintendo</option>
+                            <option value="kpop">Kpop</option>
+                            <option value="animal">Animal</option>
+                            <option value="traditional">Traditional Art</option>
+                            <option value="photography">Photography</option>
+                            <option value="3d">3D Art</option>
+                            <option value="pixel">Pixel Art</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-large">
+                        Continue to Advanced Settings
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Picverse</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
